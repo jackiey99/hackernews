@@ -9,3 +9,11 @@ TODO:
 - scrapy crawl next page
 - topic (https://github.com/amueller/word_cloud)
 - submit to github
+
+07.28.2015
+- change to class CrawlSpider for easy following the links
+
+TODO:
+- extend the database, with date informatoin and also discuss board for each news
+- sort the news from new to old
+- search functionality
