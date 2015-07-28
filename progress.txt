@@ -1,0 +1,11 @@
+07.27.2015
+Done:
+- set up django website and scrapy spider to crawl from hackernews
+- use scrapy pipeline to process items and save to django backend database
+- use djangoitem to operate the django database through scrapy
+- pagination at the index page
+
+TODO:
+- scrapy crawl next page
+- topic (https://github.com/amueller/word_cloud)
+- submit to github

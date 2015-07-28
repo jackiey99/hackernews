@@ -1,0 +1,26 @@
+{% load staticfiles %}
+<link rel="stylesheet" type = "text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" >
+
+{% if news %}
+	<ul>
+	{% for n in news %}
+		<li><a href="{{ n.link }}"> {{ n.title}} </a></li>
+	{% endfor %}
+	</ul>
+	<div class="pagination">
+		<span class="pagination"> 
+			{% if news.has_previous %}
+				<a href="?page={{ news.previous_page_number }}">previous</a> 
+			{% endif %}
+
+			<span class="current">
+				Page {{ news.number }} of {{news.paginator.num_pages }}.
+			</span> 
+
+			{% if news.has_next %}
+				<a href="?page={{ news.next_page_number }}">next</a>
+			{% endif %}
+		</span>
+{% else %}
+	<p> No news retrieved. </p>
+{% endif %}
