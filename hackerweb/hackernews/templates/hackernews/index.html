@@ -24,3 +24,10 @@
 {% else %}
 	<p> No news retrieved. </p>
 {% endif %}
+
+<form action="{% url 'wordcloud' %}" method="get" role="form">
+{% csrf_token %}
+<input type="submit" class="btn btn-info" value="Generate WordCloud" /> 
+</div>
+</form>
+
