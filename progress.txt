@@ -12,8 +12,10 @@ TODO:
 
 07.28.2015
 - change to class CrawlSpider for easy following the links
+- generate wordcloud from all the titles of hackernews
 
 TODO:
 - extend the database, with date informatoin and also discuss board for each news
 - sort the news from new to old
 - search functionality
+- use ajax to show the wordcloud without reloading the webpage (ref: www.tangowithdjango.com/book/chapters/ajax.html)
